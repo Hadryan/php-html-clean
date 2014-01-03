@@ -9,7 +9,6 @@
         $t_begin = $matches["t_begin"];
         $t_close = $matches["t_close"];
         $t_whole = $matches["t_whole"];
-        
         //remove the error tag
         $len = count($t_text);
         for($index = $len-1 ;$index >=0; $index--){
@@ -19,7 +18,7 @@
                 $input =substr($input, 0, $pos) .  str_replace($err, "", substr($input,$pos));
             }
         }
-				
+
         $stack = array();
         for($index =0; $index < $len; $index++){
             if($t_begin[$index] != "" && $t_begin[$index][0] != ""){
