@@ -1,5 +1,5 @@
 <?php 
- 	function html_clean($input){
+function html_clean($input){
         $tags = array("br","img");
         $pattern = "/<(?'t_whole'\w+)([^<>]*)?\/(\s*)?>|<(?'t_begin'\w+)([^<>]*)?>|<(?'t_error'\w+)([^<>]*)?|<\/(?'t_close'\w+)>/i";
         $matches = array();
