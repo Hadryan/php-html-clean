@@ -1,5 +1,9 @@
 <?php 
-	function html_clean($input){
+<<<<<<< HEAD
+  	function html_clean($input){
+=======
+function html_clean($input){
+>>>>>>> 48938a731198b67ed54d25951bc961e4e41ca0e9
         $tags = array("br","img");
         $pattern = "/<(?'t_whole'\w+)([^<>]*)?\/(\s*)?>|<(?'t_begin'\w+)([^<>]*)?>|<(?'t_error'\w+)([^<>]*)?|<\/(?'t_close'\w+)>/i";
         $matches = array();
@@ -59,4 +63,9 @@
         }
         return $input;
     }
+<<<<<<< HEAD
 ?>
+=======
+
+?>
+>>>>>>> 48938a731198b67ed54d25951bc961e4e41ca0e9
